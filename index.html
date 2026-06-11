@@ -61,6 +61,13 @@
           <div class="term-output hidden" id="out-status">
             <p class="status-line"><span class="dot-green pulse"></span> Looking for new challenges &amp; collaborations</p>
           </div>
+          <div class="term-line hidden" id="line-current" data-delay="2100">
+            <span class="term-prompt">$</span>
+            <span class="term-cmd typewriter" data-text="cat current_project.txt"></span>
+          </div>
+          <div class="term-output hidden" id="out-current">
+            <p><span class="tag yellow">WIP</span> Portfolio v2 · Dashboard MISP (threat correlation engine)</p>
+          </div>
           <div class="term-line hidden blink-cursor" id="line-end">
             <span class="term-prompt">$</span>
             <span class="cursor-blink">▋</span>
@@ -85,33 +92,33 @@
       <div class="about-grid">
         <div class="about-text">
           <p class="about-lead">
-            Ciao, sono Federico — informatico, appassionato di cybersecurity e sviluppatore full stack con base a <span class="accent">Venezia</span>.
+            Ciao, sono Federico — sono il tipo che smonta i sistemi per capire come funzionano, poi li rimette insieme più robusti di prima. Con base a <span class="accent">Venezia</span>.
           </p>
           <p>
-            Studio Informatica all'<strong>Università Telematica Pegaso</strong>, dove approfondisco le fondamenta teoriche che poi metto in pratica su progetti reali. Il mio approccio è quello di chi vuole <em>capire come funziona tutto</em>, dai protocolli di rete fino al codice che gira in produzione.
+            Studio Informatica all'<strong>Università Telematica Pegaso</strong> e nel tempo libero accumulo flag su TryHackMe — <strong>top 2%</strong> globale, 162 room completate. Non è un numero fine a se stesso: è il risultato di centinaia di ore a debuggare exploit, capire CVE e scrivere tool che risolvono problemi reali.
           </p>
           <p>
-            Mi muovo con uguale interesse sia nel lato offensivo — analisi delle vulnerabilità, CTF, penetration testing — che in quello difensivo: monitoraggio, risposta agli incidenti, hardening dei sistemi. Unisco queste competenze allo sviluppo software per costruire soluzioni sicure by design.
+            Costruisco dal lato offensivo — vulnerability assessment, CTF, penetration testing — e presidio quello difensivo con SIEM, incident response e hardening. Scrivo codice per automatizzare entrambi i lati: perché un buon security engineer non fa le stesse cose due volte.
           </p>
           <div class="about-badges">
             <span class="badge">🎓 Università Pegaso</span>
             <span class="badge">📍 Venezia, IT</span>
-            <span class="badge">🔐 Security First</span>
-            <span class="badge">⚡ Ready to Work</span>
+            <span class="badge">🔐 Offensive &amp; Defensive</span>
+            <span class="badge">🛠️ Builder &amp; Breaker</span>
           </div>
         </div>
         <div class="about-stats">
           <div class="stat-card">
-            <span class="stat-value accent">360°</span>
-            <span class="stat-label">Approccio alla sicurezza</span>
+            <span class="stat-value accent">top 2%</span>
+            <span class="stat-label">TryHackMe global rank</span>
           </div>
           <div class="stat-card">
-            <span class="stat-value accent">Full</span>
-            <span class="stat-label">Stack Developer</span>
+            <span class="stat-value accent">162</span>
+            <span class="stat-label">Room completate</span>
           </div>
           <div class="stat-card">
-            <span class="stat-value accent">∞</span>
-            <span class="stat-label">Voglia di imparare</span>
+            <span class="stat-value accent">32</span>
+            <span class="stat-label">Badge ottenuti</span>
           </div>
         </div>
       </div>
@@ -222,7 +229,7 @@
             </div>
           </div>
           <h3 class="project-title">Scanner Phishing Emails</h3>
-          <p class="project-desc">Tool Python per la scansione delle email di phishing.</p>
+          <p class="project-desc">Tool Python che analizza header, body e link delle email per rilevare indicatori di phishing. Estrae metadati SMTP, verifica domini sospetti e genera un report di rischio automatico.</p>
           <div class="project-tags">
             <span class="ptag">Python</span>
             <span class="ptag">Security</span>
@@ -239,7 +246,7 @@
             </div>
           </div>
           <h3 class="project-title">Creator Site: Trawel_eat_us</h3>
-          <p class="project-desc">Sito web per dei creator digitali sulla loro presentazione, esposizione social e video pubblicati.</p>
+          <p class="project-desc">Sito web full stack per creator digitali: vetrina social, feed video integrato e pagina di presentazione personalizzabile. Backend Flask, frontend JavaScript vanilla, deploy su VPS Linux.</p>
           <div class="project-tags">
             <span class="ptag">JavaScript</span>
             <span class="ptag">Node.js</span>
@@ -256,7 +263,7 @@
           </div>
           <span class="feat-badge">⭐ featured</span>
           <h3 class="project-title">Dashboard MISP</h3>
-          <p class="project-desc">Dashboard per la visualizzazione e l'analisi dei dati di sicurezza MISP.</p>
+          <p class="project-desc">Dashboard per la visualizzazione e correlazione di IoC da MISP (Malware Information Sharing Platform). Aggrega eventi, filtra per tipologia di minaccia e mostra trend di attacco su database Postgres.</p>
           <div class="project-tags">
             <span class="ptag">Python</span>
             <span class="ptag">Postgres</span>
@@ -320,23 +327,22 @@
         <div class="hobby-card">
           <span class="hobby-icon">🎮</span>
           <h4>Gaming &amp; CTF</h4>
-          <p>I videogiochi sono stati il motore principale della mia infanzia, tutt'oggi coltivo questa passione nei momenti di svago.</p>
+          <p>Cresciuto a pane e videogiochi. Oggi quella stessa mentalità problem-solving la porto nelle CTF: ogni challenge è un livello da completare, ogni flag è un boss sconfitto.</p>
         </div>
         <div class="hobby-card">
           <span class="hobby-icon">📚</span>
           <h4>Continuous Learning</h4>
-          <p>Corsi online, libri tecnici, documentazione ufficiale. Aggiornamento costante in un settore che cambia ogni settimana.</p>
+          <p>Nel security stare fermi significa regredire. Seguo nuove CVE, leggo writeup di CTF, smanetto su TryHackMe. La documentazione ufficiale è il mio romanzo preferito.</p>
         </div>
         <div class="hobby-card">
-          <span class="hobby-icon">🏋️</span>
+          <span class="hobby-icon">⚽</span>
           <h4>Sport</h4>
-          <p>Calcio e Basket</p>
-          <p>Amo tutti gli sport che mi permettono di esprimere la mia energia e di mantenere un buon equilibrio tra mente e corpo, ma se dovessi scegliere amo il basket e il calcio (che pratico)</p>
+          <p>Calcio in campo e basket sugli schermi. Il gioco di squadra mi ha insegnato più sul coordinamento e la comunicazione di qualsiasi corso — competenze che porto anche nel lavoro.</p>
         </div>
         <div class="hobby-card">
-          <span class="hobby-icon">🔧</span>
+          <span class="hobby-icon">📺</span>
           <h4>Serie TV</h4>
-          <p>Guardare serie TV è il mio modo preferito di rilassarmi e immergermi in storie avventurose. Mi piace soprattutto quando le trame sono complesse e i personaggi ben sviluppati. Ovviamente la prima preferita rimane Mr. Robot</p>
+          <p>Mr. Robot è la mia serie preferita — non per nostalgia, ma perché Elliot Alderson mi ha mostrato che la cybersecurity può cambiare il mondo. Poi ovviamente ho cercato di replicare tutto in lab.</p>
         </div>
       </div>
     </div>
