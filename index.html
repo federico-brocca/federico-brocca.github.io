@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Federico Brocca – Cybersecurity & Full Stack Developer. Portfolio professionale." />
+  <title>Federico Brocca // Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="prompt">~/federico</span><span class="cursor-blink">▋</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#hobbies">hobbies</a></li>
+      <li><a href="#contact" class="nav-cta">contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="scanlines"></div>
+    <div class="hero-content">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">federico@kali:~$</span>
+        </div>
+        <div class="terminal-body">
+          <div class="term-line" data-delay="0">
+            <span class="term-prompt">$</span>
+            <span class="term-cmd typewriter" data-text="whoami"></span>
+          </div>
+          <div class="term-output hidden" id="out-whoami">
+            <p class="hero-name">Federico Brocca</p>
+          </div>
+          <div class="term-line hidden" id="line-role" data-delay="700">
+            <span class="term-prompt">$</span>
+            <span class="term-cmd typewriter" data-text="cat roles.txt"></span>
+          </div>
+          <div class="term-output hidden" id="out-roles">
+            <p><span class="tag red">Cybersecurity</span> Offensive &amp; Defensive</p>
+            <p><span class="tag green">Developer</span> Full Stack · Backend · Frontend</p>
+            <p><span class="tag blue">Student</span> Informatica @ Università Pegaso</p>
+          </div>
+          <div class="term-line hidden" id="line-status" data-delay="1400">
+            <span class="term-prompt">$</span>
+            <span class="term-cmd typewriter" data-text="echo $STATUS"></span>
+          </div>
+          <div class="term-output hidden" id="out-status">
+            <p class="status-line"><span class="dot-green pulse"></span> Looking for new challenges &amp; collaborations</p>
+          </div>
+          <div class="term-line hidden blink-cursor" id="line-end">
+            <span class="term-prompt">$</span>
+            <span class="cursor-blink">▋</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">view projects</a>
+        <a href="#contact" class="btn btn-ghost">get in touch</a>
+      </div>
+    </div>
+    <div class="scroll-hint">scroll ↓</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">// 01</span>
+        <h2 class="section-title">about_me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">
+            Ciao, sono Federico — informatico, appassionato di cybersecurity e sviluppatore full stack con base a <span class="accent">Vicenza</span>.
+          </p>
+          <p>
+            Studio Informatica all'<strong>Università Telematica Pegaso</strong>, dove approfondisco le fondamenta teoriche che poi metto in pratica su progetti reali. Il mio approccio è quello di chi vuole <em>capire come funziona tutto</em>, dai protocolli di rete fino al codice che gira in produzione.
+          </p>
+          <p>
+            Mi muovo con uguale interesse sia nel lato offensivo — analisi delle vulnerabilità, CTF, penetration testing — che in quello difensivo: monitoraggio, risposta agli incidenti, hardening dei sistemi. Unisco queste competenze allo sviluppo software per costruire soluzioni sicure by design.
+          </p>
+          <div class="about-badges">
+            <span class="badge">🎓 Università Pegaso</span>
+            <span class="badge">📍 Vicenza, IT</span>
+            <span class="badge">🔐 Security First</span>
+            <span class="badge">⚡ Open to Work</span>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-value accent">360°</span>
+            <span class="stat-label">Approccio alla sicurezza</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value accent">Full</span>
+            <span class="stat-label">Stack Developer</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value accent">∞</span>
+            <span class="stat-label">Voglia di imparare</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">// 02</span>
+        <h2 class="section-title">skills &amp; tools</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <h3 class="cat-title"><span class="cat-icon">🔴</span> Offensive Security</h3>
+          <ul class="skill-list">
+            <li>Penetration Testing</li>
+            <li>Web App Vulnerability Assessment</li>
+            <li>CTF (Capture The Flag)</li>
+            <li>Network Scanning &amp; Enumeration</li>
+            <li>Social Engineering Awareness</li>
+          </ul>
+          <div class="tool-pills">
+            <span class="pill">Kali Linux</span>
+            <span class="pill">Metasploit</span>
+            <span class="pill">Burp Suite</span>
+            <span class="pill">Nmap</span>
+            <span class="pill">Wireshark</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="cat-title"><span class="cat-icon">🔵</span> Defensive Security</h3>
+          <ul class="skill-list">
+            <li>SIEM &amp; Log Analysis</li>
+            <li>Incident Response</li>
+            <li>System Hardening</li>
+            <li>Network Traffic Analysis</li>
+            <li>Threat Intelligence</li>
+          </ul>
+          <div class="tool-pills">
+            <span class="pill">Splunk</span>
+            <span class="pill">Snort</span>
+            <span class="pill">UFW / iptables</span>
+            <span class="pill">Fail2ban</span>
+            <span class="pill">OpenVAS</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="cat-title"><span class="cat-icon">🟢</span> Development</h3>
+          <ul class="skill-list">
+            <li>Backend Development</li>
+            <li>Frontend Development</li>
+            <li>REST API Design</li>
+            <li>Database Design &amp; Query</li>
+            <li>Scripting &amp; Automation</li>
+          </ul>
+          <div class="tool-pills">
+            <span class="pill">Python</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">HTML / CSS</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Bash</span>
+            <span class="pill">Git</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="cat-title"><span class="cat-icon">⚙️</span> Infrastructure</h3>
+          <ul class="skill-list">
+            <li>Linux Administration</li>
+            <li>Virtualizzazione</li>
+            <li>Reti TCP/IP</li>
+            <li>DNS / DHCP / VPN</li>
+            <li>Docker basics</li>
+          </ul>
+          <div class="tool-pills">
+            <span class="pill">Linux</span>
+            <span class="pill">VirtualBox</span>
+            <span class="pill">Docker</span>
+            <span class="pill">Cisco</span>
+            <span class="pill">pfSense</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">// 03</span>
+        <h2 class="section-title">projects</h2>
+      </div>
+      <p class="section-intro">Alcuni dei miei lavori. I progetti contrassegnati con 🔒 sono privati o per uso didattico — sostituisci con i tuoi reali!</p>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🛡️</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub">⟨/⟩</a>
+              <a href="#" class="project-link" title="Demo">↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">Vulnerability Scanner</h3>
+          <p class="project-desc">Tool Python per la scansione automatica di vulnerabilità comuni su host locali. Integra Nmap, banner grabbing e report automatico in HTML.</p>
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">Security</span>
+            <span class="ptag">Nmap</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🌐</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub">⟨/⟩</a>
+              <a href="#" class="project-link" title="Demo">↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">Secure Web App</h3>
+          <p class="project-desc">Applicazione web full stack con autenticazione JWT, protezione CSRF, rate limiting e input sanitization. Sviluppata seguendo le OWASP Top 10.</p>
+          <div class="project-tags">
+            <span class="ptag">JavaScript</span>
+            <span class="ptag">Node.js</span>
+            <span class="ptag">OWASP</span>
+          </div>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-header">
+            <span class="project-icon">🔍</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub">⟨/⟩</a>
+            </div>
+          </div>
+          <span class="feat-badge">⭐ featured</span>
+          <h3 class="project-title">CTF Writeups</h3>
+          <p class="project-desc">Raccolta documentata di soluzioni a challenge CTF (HackTheBox, TryHackMe). Ogni writeup include metodologia, tools usati e lessons learned.</p>
+          <div class="project-tags">
+            <span class="ptag">CTF</span>
+            <span class="ptag">HackTheBox</span>
+            <span class="ptag">Writeup</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">📊</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub">⟨/⟩</a>
+              <a href="#" class="project-link" title="Demo">↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">Log Analyzer</h3>
+          <p class="project-desc">Script Python per l'analisi e correlazione di log di sistema. Rileva pattern sospetti e genera alert. Pensato per ambienti Linux.</p>
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">Blue Team</span>
+            <span class="ptag">SIEM</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">💻</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub">⟨/⟩</a>
+            </div>
+          </div>
+          <h3 class="project-title">Portfolio (questo sito)</h3>
+          <p class="project-desc">Il sito che stai visitando: HTML, CSS e JS vanilla, zero framework, zero dipendenze. Dark terminal aesthetic, completamente responsive.</p>
+          <div class="project-tags">
+            <span class="ptag">HTML</span>
+            <span class="ptag">CSS</span>
+            <span class="ptag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card add-card">
+          <div class="add-inner">
+            <span class="add-icon">+</span>
+            <p>Aggiungi qui il tuo prossimo progetto</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOBBIES -->
+  <section class="section section-dark" id="hobbies">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">// 04</span>
+        <h2 class="section-title">beyond_the_terminal</h2>
+      </div>
+      <p class="section-intro">Non sono solo schermo e tastiera. Quando stacco:</p>
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <span class="hobby-icon">🎮</span>
+          <h4>Gaming &amp; CTF</h4>
+          <p>Videogiochi e challenge di sicurezza: due mondi che si incontrano. HackTheBox e TryHackMe sono il mio terrain di gioco preferito.</p>
+        </div>
+        <div class="hobby-card">
+          <span class="hobby-icon">📚</span>
+          <h4>Continuous Learning</h4>
+          <p>Corsi online, libri tecnici, documentazione ufficiale. Aggiornamento costante in un settore che cambia ogni settimana.</p>
+        </div>
+        <div class="hobby-card">
+          <span class="hobby-icon">🏋️</span>
+          <h4>Sport</h4>
+          <p><!-- Aggiungi il tuo sport/hobby fisico preferito qui --></p>
+          <!-- Personalizza questo campo con i tuoi hobby reali! -->
+          <p>Muoversi aiuta a pensare meglio. La disciplina nello sport si trasferisce nel lavoro.</p>
+        </div>
+        <div class="hobby-card">
+          <span class="hobby-icon">🔧</span>
+          <h4>Tinkering</h4>
+          <p>Smontare cose per capire come funzionano. Hardware, firmware, applicazioni: la curiosità tecnica non ha limiti.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOALS -->
+  <section class="section" id="goals">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">// 05</span>
+        <h2 class="section-title">what_i_want</h2>
+      </div>
+      <div class="goals-grid">
+        <div class="goal-card">
+          <div class="goal-icon">🎯</div>
+          <h4>Short term</h4>
+          <p>Consolidare competenze pratiche in penetration testing e sviluppare progetti open source nel campo della security.</p>
+        </div>
+        <div class="goal-card">
+          <div class="goal-icon">🚀</div>
+          <h4>Career</h4>
+          <p>Lavorare come Security Engineer o Pentester in un team che affronta problemi reali e complessi. Preferibilmente in un contesto internazionale.</p>
+        </div>
+        <div class="goal-card">
+          <div class="goal-icon">🏆</div>
+          <h4>Certifications</h4>
+          <p>Percorso verso <strong>eJPT</strong> → <strong>CEH</strong> → <strong>OSCP</strong>. Certificazioni che provano competenze pratiche, non solo teoriche.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">// 06</span>
+        <h2 class="section-title">contact</h2>
+      </div>
+      <div class="contact-content">
+        <p class="contact-lead">Hai un progetto interessante? Vuoi collaborare, parlare di security, o semplicemente fare networking?</p>
+        <div class="contact-terminal">
+          <div class="terminal-bar mini">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="terminal-title">message.sh</span>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:federic440@email.com" class="contact-item">
+              <span class="contact-cmd">$ send_email</span>
+              <span class="contact-val">federic440@email.com</span>
+            </a>
+            <a href="https://linkedin.com/in/federico-brocca" target="_blank" rel="noopener" class="contact-item">
+              <span class="contact-cmd">$ open linkedin</span>
+              <span class="contact-val">linkedin.com/in/federico-brocca</span>
+            </a>
+            <a href="https://github.com/federico-brocca" target="_blank" rel="noopener" class="contact-item">
+              <span class="contact-cmd">$ clone repos</span>
+              <span class="contact-val">github.com/federico-brocca</span>
+            </a>
+            <a href="https://tryhackme.com/p/federico-brocca" target="_blank" rel="noopener" class="contact-item">
+              <span class="contact-cmd">$ hack together</span>
+              <span class="contact-val">TryHackMe / HackTheBox</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        <span class="prompt">federico@portfolio:~$</span> echo "Built with ❤️ &amp; vim · © 2025 Federico Brocca"
+      </p>
+      <p class="footer-sub">No frameworks were harmed in the making of this site.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
